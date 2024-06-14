@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background: url('public/bg-guess-the-word.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background: linear-gradient(135deg, #030616 0%, #101534 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #030616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px
+}
+
+label {
+    color: #4A5567;
+}
+
+.button {
+    background: #672171;
+    border-radius: 10px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front {
+    display: block;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: #C951E7;
+    color: #F2F5F9;
+    transform: translateY(-6px);
+}
+
+.button:active .front {
+    transform: translateY(-2px);
+}
+
+.word-background {
+    background: #4A5567;
+    color: #97A3B6;
+    font-size: 32px;
+    height: 50px;
+    border-radius: 10px;
+    border-bottom: 4px solid #030616;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin: 20px 0 40px 0;
+}
+
+#word {
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 15px;
+}
+
+.info-group {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Add this line */
+    justify-content: center; /* Add this line to center the inputs */
+}
+
+.letter-input {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid #4A5567;
+    color: #F2F5F9;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.letter-input:focus {
+    outline: none;
+    border: 3px solid #672171;
+}
+
+.button-group {
+    display: flex;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+#mistakes {
+    color: #97A3B6;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+    gap: 5px;
+}
